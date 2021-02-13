@@ -82,10 +82,14 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
-  let theSum = 2 + 3 + 4;
-  return[theSum, "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
+
   //eslint-disable-line
-}
+  let result =0;
+  for(let x =0; x< sumArr.length; x++){
+      result = sum(sumArr[x],result)[0];
+  }
+  let answer =  sumArr + " was passed in as an array of numbers, and " +result+ " is their sum."
+  return[result,answer]}
 
 // Here is the test for sumArray(); uncomment it to run it
 
