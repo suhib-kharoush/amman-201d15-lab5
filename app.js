@@ -53,12 +53,22 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
+<<<<<<< HEAD
   let sum2 = a + b + c;
   let product = a*b*c;
   return[sum2, product, `${a} and ${b} and ${c} sum to ${sum2}.`,  `The product of ${a} and ${b} and ${c} is ${product}.`]
   //eslint-disable-line
   
+=======
+  let sum1 =  a + b + c;
+  let mult1 =a * b *c;
+  let array3 = `${a} and ${b} and ${c} sum to ${sum1}.`
+  let array4 = `The product of ${a} and ${b} and ${c} is ${mult1}.`
+  return[sum1, mult1, array3, array4]
+>>>>>>> afbb889b110790c9a4dadc3269c282942dd98934
  
+  //eslint-disable-line 
+  
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
